@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Priyanka 💌</title>
+<style>
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#1e293b;
+color:white;
+overflow:hidden;
+}
+#progressWrap{
+position:fixed;top:0;left:0;width:100%;height:6px;
+background:#334155;z-index:100;
+}
+#progress{height:100%;width:8%;background:#f472b6;transition:.4s;}
+.page{
+display:none;height:100vh;justify-content:center;align-items:center;
+padding:20px;
+}
+.active{display:flex;animation:fade .6s;}
+.card{
+max-width:900px;width:92%;
+background:rgba(51,65,85,.85);
+backdrop-filter:blur(18px);
+padding:35px;border-radius:28px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,0,0,.3);
+}
+h1{margin-top:0}
+.btn{
+padding:12px 24px;border:none;border-radius:30px;
+cursor:pointer;margin-top:15px;
+}
+.edit{
+background:rgba(255,255,255,.08);
+padding:15px;border-radius:12px;
+outline:none;
+}
+.float{
+position:fixed;
+top:-50px;
+font-size:28px;
+pointer-events:none;
+animation:fall linear infinite;
+}
+@keyframes fall{
+to{transform:translateY(120vh)}
+}
+@keyframes fade{
+from{opacity:0;transform:translateY(15px)}
+to{opacity:1;transform:translateY(0)}
+}
+.food{
+font-size:90px;
+}
+</style>
+</head>
+<body>
+
+<div id="progressWrap"><div id="progress"></div></div>
+
+<div class="page active" id="p1">
+<div class="card">
+<h1>💌 For Priyanka</h1>
+<p>
+Before you close this website... please give me a few minutes.
+</p>
+<button class="btn" onclick="next()">Open Letter</button>
+</div>
+</div>
+
+<div class="page" id="p2"><div class="card">
+<h1>Hi Priyanka ❤️</h1>
+<p>
+I made this because some things are easier to write than say.
+</p>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p3"><div class="card">
+<h1>🥺 No Excuses</h1>
+<p>
+I'm not here to defend myself.<br>
+I'm not here to prove I'm right.<br><br>
+I'm here because I know I hurt you.
+</p>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p4"><div class="card">
+<h1>💌 My Apology</h1>
+<div class="edit" contenteditable="true">
+Write your apology here...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p5"><div class="card">
+<h1>❤️ What You Mean To Me</h1>
+<div class="edit" contenteditable="true">
+Write why she is important to you...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p6"><div class="card">
+<h1>🌸 What I Did Wrong</h1>
+<div class="edit" contenteditable="true">
+Write honestly what mistake you made...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p7"><div class="card">
+<h1>📖 Memory #1</h1>
+<div class="edit" contenteditable="true">
+Write a favorite memory...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p8"><div class="card">
+<h1>📖 Memory #2</h1>
+<div class="edit" contenteditable="true">
+Write another memory...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p9"><div class="card">
+<h1>📖 Memory #3</h1>
+<div class="edit" contenteditable="true">
+Write another memory...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p10"><div class="card">
+<h1>😋 Pani Puri Page</h1>
+<div class="food">🥙</div>
+<p>
+If apologies could be paid in pani puris,<br>
+I'd probably owe you enough for a lifetime.
+</p>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p11"><div class="card">
+<h1>🧸 Teddy Letter</h1>
+<p>
+Dear Priyanka,<br><br>
+He has been sad because you're angry.<br>
+Please consider accepting one apology.
+</p>
+<div style="font-size:90px">🧸</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p12"><div class="card">
+<h1>✨ Things I Never Said</h1>
+<p>
+Thank you for listening.<br>
+Thank you for staying.<br>
+Thank you for being you.
+</p>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p13"><div class="card">
+<h1>💕 My Promise</h1>
+<div class="edit" contenteditable="true">
+Write realistic promises here...
+</div>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p14"><div class="card">
+<h1>🎁 Hidden Message</h1>
+<button class="btn" onclick="document.getElementById('secret').style.display='block'">Open When Ready</button>
+<p id="secret" style="display:none">
+Even if you're still upset after reading all this... thank you for reading it.
+</p>
+<button class="btn" onclick="next()">Next</button>
+</div></div>
+
+<div class="page" id="p15"><div class="card">
+<h1>🌷 Take Your Time</h1>
+<p>
+I'm not asking for instant forgiveness.
+</p>
+<button class="btn" onclick="next()">I Need More Time 🌸</button>
+<button class="btn" onclick="next()">I'm Feeling Better ❤️</button>
+</div></div>
+
+<div class="page" id="p16"><div class="card">
+<h1>💌 Final Message</h1>
+<p>
+I'm genuinely sorry.<br><br>
+Your friendship means a lot to me.<br><br>
+Whether you forgive me today, tomorrow, or much later,<br>
+I'll respect your feelings.
+</p>
+<button class="btn" onclick="celebrate()">Finish ❤️</button>
+<div id="final"></div>
+</div></div>
+
+<script>
+let current=1,total=16;
+function next(){
+document.getElementById('p'+current).classList.remove('active');
+current++;
+document.getElementById('p'+current).classList.add('active');
+document.getElementById('progress').style.width=(current/total*100)+'%';
+}
+function celebrate(){
+document.getElementById('final').innerHTML='🎉 💖 Thank you for reading this. 💖 🎉';
+}
+const items=['💖','❤️','🌸','🧸','✨','🎀'];
+for(let i=0;i<100;i++){
+let d=document.createElement('div');
+d.className='float';
+d.innerHTML=items[Math.floor(Math.random()*items.length)];
+d.style.left=Math.random()*100+'vw';
+d.style.animationDuration=(20+Math.random()*20)+'s';
+document.body.appendChild(d);
+}
+</script>
+</body>
+</html>
